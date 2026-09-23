@@ -13,6 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Prefer /api/sitemap — Hostinger LiteSpeed/CDN returns 500 on *.xml static paths
+Sitemap: https://careers.syntrixglobal.in/sitemap.xml
 Sitemap: https://careers.syntrixglobal.in/api/sitemap
-Sitemap: https://careers.syntrixglobal.in/sitemap.txt

@@ -7,17 +7,9 @@ PassengerRestartDir /home/u133121911/domains/careers.syntrixglobal.in/hbuilds/cu
 SetEnv NODE_OPTIONS "--require /home/u133121911/domains/careers.syntrixglobal.in/hbuilds/config/preload-timestamp.js"
 SetEnv LSNODE_CONSOLE_LOG console.log
 
-RewriteEngine On
-RewriteRule ^sitemap\.xml$ /sitemap.txt [L]
-
-<FilesMatch "^(sitemap\.xml|sitemap\.txt|robots\.txt)$">
+<FilesMatch "^(robots\.txt|sitemap\.txt)$">
   PassengerEnabled off
 </FilesMatch>
-
-<Files "sitemap.xml">
-  ForceType application/xml
-  Header set Content-Type "application/xml; charset=utf-8"
-</Files>
 
 <Files "sitemap.txt">
   ForceType application/xml

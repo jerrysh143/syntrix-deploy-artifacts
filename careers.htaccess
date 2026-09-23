@@ -7,9 +7,11 @@ PassengerRestartDir /home/u133121911/domains/careers.syntrixglobal.in/hbuilds/cu
 SetEnv NODE_OPTIONS "--require /home/u133121911/domains/careers.syntrixglobal.in/hbuilds/config/preload-timestamp.js"
 SetEnv LSNODE_CONSOLE_LOG console.log
 
-# LiteSpeed returns 500 for bare .xml; serve via PHP reading sitemap.txt
-RewriteEngine On
-RewriteRule ^sitemap\.xml$ serve-sitemap.php [L]
+# Treat physical sitemap.xml as PHP (LiteSpeed 500s static/rewritten .xml)
+<Files "sitemap.xml">
+  PassengerEnabled off
+  SetHandler application/x-httpd-php
+</Files>
 
 <FilesMatch "^(robots\.txt|sitemap\.txt|serve-sitemap\.php)$">
   PassengerEnabled off

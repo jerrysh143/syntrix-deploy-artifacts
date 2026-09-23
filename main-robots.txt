@@ -13,5 +13,7 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://syntrixglobal.in/sitemap.xml
+# Hostinger hCDN JS-challenges same-origin PHP/txt sitemap paths for non-browser UAs.
+# GitHub raw returns HTTP 200 application/xml urlset with zero interstitial.
+Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/main-sitemap.xml
 Sitemap: https://syntrixglobal.in/serve-sitemap.php

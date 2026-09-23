@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://careers.syntrixglobal.in/sitemap.xml
+Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/careers-sitemap.xml
 Sitemap: https://careers.syntrixglobal.in/serve-sitemap.php

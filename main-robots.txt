@@ -14,6 +14,7 @@ User-agent: *
 Allow: /
 
 # Same-origin only (GSC host must match locs). GitHub-raw is backup for us, not listed for crawlers.
+Sitemap: https://syntrixglobal.in/urls.txt
 Sitemap: https://syntrixglobal.in/page-index
 Sitemap: https://syntrixglobal.in/sitemap
 Sitemap: https://syntrixglobal.in/sitemap.xml

@@ -10,13 +10,18 @@ SetEnv LSNODE_CONSOLE_LOG console.log
 RewriteEngine On
 RewriteRule ^sitemap\.xml$ /serve-sitemap.php [L]
 
-<FilesMatch "^(robots\.txt|sitemap\.txt|serve-sitemap\.php|site-urls)$">
+<FilesMatch "^(robots\.txt|sitemap\.txt|serve-sitemap\.php|site-urls|urls\.txt)$">
   PassengerEnabled off
 </FilesMatch>
 
 <Files "site-urls">
   ForceType application/xml
   Header set Content-Type "application/xml; charset=utf-8"
+</Files>
+
+<Files "urls.txt">
+  ForceType text/plain
+  Header set Content-Type "text/plain; charset=utf-8"
 </Files>
 
 <Files "sitemap.txt">

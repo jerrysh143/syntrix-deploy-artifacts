@@ -7,7 +7,10 @@ PassengerRestartDir /home/u133121911/domains/syntrixglobal.in/hbuilds/current/no
 SetEnv NODE_OPTIONS "--require /home/u133121911/domains/syntrixglobal.in/hbuilds/config/preload-timestamp.js"
 SetEnv LSNODE_CONSOLE_LOG console.log
 
-# Static only for robots + sitemap.txt backup. /sitemap.xml MUST hit Node (Passenger).
+# LiteSpeed 500s bare .xml before Node — rewrite to ForceTyped .txt (static).
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.txt [L]
+
 <FilesMatch "^(robots\.txt|sitemap\.txt)$">
   PassengerEnabled off
 </FilesMatch>

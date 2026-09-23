@@ -13,6 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Same-origin primary (GSC host must match locs). GitHub-raw is discovery hint only — do not GSC-submit it.
+# Same-origin only (GSC host must match locs). GitHub-raw is backup for us, not listed for crawlers.
+Sitemap: https://syntrixglobal.in/sitemap.xml
 Sitemap: https://syntrixglobal.in/serve-sitemap.php
-Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/main-sitemap.xml

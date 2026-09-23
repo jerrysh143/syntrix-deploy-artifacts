@@ -13,7 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Hostinger hCDN JS-challenges same-origin PHP/txt sitemap paths for non-browser UAs.
-# GitHub raw returns HTTP 200 application/xml urlset with zero interstitial.
-Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/main-sitemap.xml
+# Same-origin primary (GSC host must match locs). GitHub-raw is discovery hint only — do not GSC-submit it.
 Sitemap: https://syntrixglobal.in/serve-sitemap.php
+Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/main-sitemap.xml

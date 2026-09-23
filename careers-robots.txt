@@ -13,5 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/careers-sitemap.xml
+# Same-origin primary (GSC host must match locs). GitHub-raw is discovery hint only — do not GSC-submit it.
 Sitemap: https://careers.syntrixglobal.in/serve-sitemap.php
+Sitemap: https://raw.githubusercontent.com/jerrysh143/syntrix-deploy-artifacts/main/careers-sitemap.xml

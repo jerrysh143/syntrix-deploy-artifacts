@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://careers.syntrixglobal.in/sitemap.txt
+Sitemap: https://careers.syntrixglobal.in/sitemap.xml

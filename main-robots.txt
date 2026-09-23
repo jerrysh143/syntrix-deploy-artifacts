@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://syntrixglobal.in/sitemap.xml
-Sitemap: https://syntrixglobal.in/api/sitemap
+Sitemap: https://syntrixglobal.in/serve-sitemap.php

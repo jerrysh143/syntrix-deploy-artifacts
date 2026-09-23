@@ -7,12 +7,7 @@ PassengerRestartDir /home/u133121911/domains/syntrixglobal.in/hbuilds/current/no
 SetEnv NODE_OPTIONS "--require /home/u133121911/domains/syntrixglobal.in/hbuilds/config/preload-timestamp.js"
 SetEnv LSNODE_CONSOLE_LOG console.log
 
-# Physical sitemap.xml contains PHP; force PHP handler (LiteSpeed 500s static .xml)
-<Files "sitemap.xml">
-  PassengerEnabled off
-  SetHandler application/x-httpd-php
-</Files>
-
+# No physical sitemap.xml — Hostinger panel redirects /sitemap.xml → /serve-sitemap.php
 <FilesMatch "^(robots\.txt|sitemap\.txt|serve-sitemap\.php)$">
   PassengerEnabled off
 </FilesMatch>

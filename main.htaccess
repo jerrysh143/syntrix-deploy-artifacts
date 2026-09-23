@@ -1,0 +1,13 @@
+PassengerAppRoot /home/u133121911/domains/syntrixglobal.in/hbuilds/current/nodejs
+PassengerAppType node
+PassengerNodejs /opt/alt/alt-nodejs24/root/bin/node
+PassengerStartupFile server/index.mjs
+PassengerBaseURI /
+PassengerRestartDir /home/u133121911/domains/syntrixglobal.in/hbuilds/current/nodejs/tmp
+SetEnv NODE_OPTIONS "--require /home/u133121911/domains/syntrixglobal.in/hbuilds/config/preload-timestamp.js"
+SetEnv LSNODE_CONSOLE_LOG console.log
+
+<Files "sitemap.xml">
+  PassengerEnabled off
+  ForceType application/xml
+</Files>

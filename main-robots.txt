@@ -13,4 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://syntrixglobal.in/sitemap.xml
+# Prefer /api/sitemap — Hostinger LiteSpeed/CDN returns 500 on *.xml static paths
+Sitemap: https://syntrixglobal.in/api/sitemap
+Sitemap: https://syntrixglobal.in/sitemap.txt
